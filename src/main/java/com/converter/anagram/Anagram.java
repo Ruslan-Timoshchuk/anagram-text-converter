@@ -6,9 +6,11 @@ public class Anagram {
 
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
-            String text = scanner.nextLine();
             Formatter formatter = new Formatter();
-            System.out.println("You'll get: " + formatter.format(text));
+            while (scanner.hasNextLine()) {
+                String text = scanner.nextLine();
+                System.out.println("You'll get: " + formatter.format(text));
+            }
         }
     }
 
